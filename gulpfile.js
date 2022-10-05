@@ -1,4 +1,6 @@
 const gulp = require("gulp");
+
+const ghPages = require('gulp-gh-pages');
 const browserSync = require("browser-sync");
 const sass = require("gulp-sass")(require("sass"));
 const rename = require("gulp-rename");
@@ -12,7 +14,10 @@ gulp.task("server", function () {
     },
   });
 });
-
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 gulp.task("styles", function () {
   return gulp.src("src/sass/*.+(scss|sass)")
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
