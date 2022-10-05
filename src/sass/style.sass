@@ -1,14 +1,503 @@
 
 @import "media"
-
+@import "fonts"
 *
-	font-family: 'Open Sans'
+	margin: 0
+	font-family: 'CoreSansC-45Regular'
+	font-style: normal
+	color: #FFFFFF
+
+html
+	background-color: #904e4e
+.complex_link span
+
+	top: 50px
+	left: 0
+	opacity: 0
+
+	font-size: 40px
+	transition: opacity .4s linear
+	background: #00000000
+
+.complex_link:hover span
+	opacity: 1
+	transform: translateY(-17px)
+	transition: 700ms
+
+.complex_img
+	margin-top: 350%
+
+.severny
+	position: absolute
+	font-size: 16px
+	line-height: 19px
+	width: 146px
+	list-style-type: none
+	text-decoration: none
+	margin-top: 17px
+
+.severny_info
+	font-size: 16px
+	line-height: 19px
+	opacity: 0.5
+	width: 330px
+	margin-top: 9px
+.main_wrapper
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	position: absolute
+	z-index: 2
+	width: 100%
+	top: 35px
+.main_wrapper1
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	position: absolute
+	z-index: 2
+	width: 100%
+	top: 55px
+
+.main_logo
+	margin-left: 20px
+	width: 122px
+
+.wrapper
+	height: 200px
+.wrapper2
+	width: 450px
+	z-index: 3
+.wrapper2_contacts
+	width: 450px
+	z-index: 3
+.wrapper_menu
+	width: 40%
+	display: flex
+	justify-content: flex-end
+.empty
+	visibility: hidden
+
+.contacts
+	width: 309px
+
+.worktime
+	font-size: 16px
+	line-height: 19px
+	opacity: 0.5
+	margin-top: 6px
+
+.phone
+	font-family: 'CoreSansC-45Regular'
+	font-weight: 400
+	font-size: 20px
+	line-height: 23px
+
+	letter-spacing: -0.03em
+
+.menu
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	margin: 0
+	list-style-type: none
+	padding-right: 59px
+	width: 610px
+
+	&_link
+		text-decoration: none
+		text-align: center
+		font-size: 16px
+		line-height: 19px
+
+	&_item
+		list-style-type: none
+		padding-right: 24px
+		cursor: pointer
+		&:hover
+			transform: translateY(-6px)
+			transition: 0.5s all
+
+.menu_active
+	display: flex
+	margin-right: 41px
+
+.burger
+	display: block
+	position: absolute
+	width: 26px
+	height: 12px
+	z-index: 3
+	cursor: pointer
+span
+	display: block
+	height: 2px
+	width: 48px
+	background: #F1F1F1
+	margin-bottom: 5px
+	right: 0
+
+.video
+	min-height: 100vh
+	position: relative
+	width: 100%
+	display: table
+	background: url(../video/DJI_0080.png ) no-repeat center
+	background-size: cover
+.video__media1
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	transition: 1s all
+	object-fit: cover
+
+.video__disactive
+	left: -100%
+	transition: 2s all
+.video__media2
+
+	position: absolute
+	top: 0
+	left: 0
+	object-fit: cover
+	width: 100%
+	height: 100%
+	z-index: 0
+.video__active
+
+	right: 0%
+	transition: 2s all
+
+.btn_left
+	position: relative
+	width: 20px
+	background-color: transparent
+	border-radius: 50%
+	border-color: #ffffff00
+	cursor: pointer
+
+.btn_right
+	left: 20px
+	position: relative
+	width: 20px
+	background-color: transparent
+	border-radius: 50%
+	border-color: #ffffff00
+	cursor: pointer
+	z-index: 2
+
+.btn_right1
+	position: relative
+	border-radius: 50%
+	left: 20px
+	width: 40px
+	height: 40px
+
+	background-color: transparent
+	border: 1px solid #4a484853
+	border-top: 1px solid #fff
+
+	animation: animate 2s infinite linear
+	cursor: pointer
+
+@keyframes animate
+
+	0%
+		transform: translate(-70%, -6%) rotate(0deg)
+
+	100%
+		transform: translate(-70%, -6%) rotate(360deg)
+
+.background_btn
+	margin-top: 172px
+	display: flex
+	justify-content: flex-end
+	width: 100px
+.empty
+	width: 100px
+
+.promo
+	display: flex
+	justify-content: space-between
+	position: absolute
+	width: 100%
+	height: 600px
+	z-index: 2
+	margin-top: 200px
+.networks
+	margin-top: 168px
+.social-networks
+	display: flex
+	flex-direction: column
+	margin-top: 133px
+
+.social-network
+	padding-bottom: 30px
+	padding-left: 39px
+	:hover
+		transform: scale(1.2)
+
+.complex
+	display: flex
+	margin-top: 169px
+
+.complex_links
+	display: flex
+	margin: 0
+
+.complex_lin
+	padding: 0
+
+.complex_item
+	list-style-type: none
+	padding-bottom: 10px
+	font-size: 16px
+	line-height: 19px
+
+.main_title
+	display: flex
+	width: 40%
+	margin-top: 155px
+	flex-direction: column
+	align-items: flex-end
+// .title_text
+// 	100%
+
+h1
+	font-size: 40px
+	line-height: 47px
+	padding: 0 0 0 40px
+	letter-spacing: -0.02em
 	font-style: normal
 	font-weight: 400
-	font-size: 14px
-	line-height: 22px
+	width: 621px
 
-	
-.container
-	width: 1200px
-	margin: 0 auto
+.btn_flat
+	display: flex
+	margin-top: 50px
+	margin-left: 40px
+
+.btn_choose
+
+	width: 210px
+	height: 56px
+	box-sizing: border-box
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	background-color: transparent
+	border: 2px solid rgba(255, 255, 255, 1)
+	border-radius: 0.6em
+	color: rgba(255, 255, 255, 1)
+	font-weight: 400
+	font-size: 16px
+	line-height: 19px
+	margin-right: 30px
+	cursor: pointer
+	display: flex
+	align-items: center
+	text-decoration: none
+	text-align: center
+	-webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out
+	transition: box-shadow 600ms ease-in-out, color 300ms ease-in-out
+	&:hover
+		box-shadow: 0 0 40px 40px rgba(255, 255, 255, 1) inset
+		color: #0e0e0e
+		fill: #0e0e0e
+	&:before
+		content: ''
+		display: block
+		width: 12px
+		height: 2px
+		margin-right: 18px
+
+		margin-bottom: 12px
+		background-color: #fffefefe
+		transition: 0.6s all
+		margin-top: 9px
+	&:after
+		content: ''
+		position: absolute
+		transform: translateX(-50%)
+		height: 12px
+		width: 2px
+		background-color: #fffefefe
+		margin-left: 6px
+		margin-top: -3px
+
+		transition: 0.6s all
+	&:hover
+		&:before, &:after
+			background-color: black
+.buy_flat
+	width: 210px
+	height: 56px
+	display: flex
+	align-items: center
+	text-decoration: none
+	margin-right: 170px
+	&:hover
+		text-decoration: underline
+.border
+	position: absolute
+	width: 100%
+	height: 2px
+	background-color: rgba(255, 255, 255, 0.15)
+	bottom: 151px
+	z-index: 2
+
+.search_wrapper
+	display: flex
+	position: absolute
+	width: 100%
+	bottom: 67px
+	justify-content: space-evenly
+
+.search
+	display: flex
+	flex-direction: column
+
+	z-index: 3
+	width: 314px
+	height: 56px
+
+.search2
+	display: flex
+	flex-direction: column
+
+	z-index: 3
+	width: 270px
+	height: 56px
+
+.search3
+	display: flex
+	flex-direction: column
+
+	z-index: 3
+	width: 127px
+	height: 56px
+.search4
+	display: flex
+	flex-direction: column
+
+	z-index: 3
+	width: 224px
+	height: 56px
+.rooms
+	display: flex
+	padding: 0
+.rooms li
+	text-decoration: none
+	list-style-type: none
+// .study
+// 	background-color: #ffffff00
+// 	&:active
+// 		background-color: #ffffffde
+
+.room
+
+	background-color: rgba(255, 255, 255, 0.16)
+	border: 1px solid #ffffff00
+	font-size: 16px
+	line-height: 16px
+	cursor: pointer
+	padding: 19px
+
+	&:focus
+		background-color: #ffff
+		color: black
+	&:hover
+		background-color: #ffff
+		color: black
+.room_border
+	border-right: 2px solid #ffffff35
+p
+	font-weight: 400
+	font-size: 13px
+	line-height: 13px
+	margin-bottom: 14px
+	padding: 0
+.border_degree1
+	border-radius: 7px 0 0 7px
+
+.border_degree2
+	border-radius: 0px 7px 7px 0px
+
+.search_input
+	display: flex
+
+.input_text
+	font-size: 16px
+	line-height: 16px
+	color: #FFFFFF
+	background-color: initial
+	border: 0.01px solid rgba(235, 235, 235, 0)
+	&:focus
+		outline: none !important
+.search_input_border
+	position: relative
+	width: 120px
+	height: 40px
+	padding: 9px 4px 9px 11px
+	display: flex
+	-webkit-box-align: center
+	align-items: center
+	background: rgba(255, 255, 255, 0.16)
+	&:hover
+		background-color: #ffffff3b
+.down_img
+	margin-left: 88px
+
+.live_complex
+	text-decoration: none
+	list-style-type: none
+	padding: 0
+
+.live_complex_list
+	background-color: rgba(255, 255, 255, 0.16)
+	border: 1px solid #ffffff00
+	font-size: 16px
+	line-height: 16px
+	cursor: pointer
+	padding: 19px
+	border-radius: 7px
+	width: 270px
+	&:hover
+		background-color: #ffffff3b
+.btn_filters
+
+	margin-top: 28px
+	width: 109px
+	padding: 9px
+	border: 1px solid #ffffff47
+	border-radius: 7px
+	font-size: 13px
+	line-height: 130.3%
+	&:hover
+		background-color: #ffffff3b
+.btn_filter
+	display: flex
+	text-decoration: none
+	justify-content: space-around
+
+	font-size: 13px
+	line-height: 130.3%
+.filter_text
+	width: 65px
+.btn_show
+	width: 178px
+	height: 56px
+	background-color: #D90002
+	border-radius: 7px
+	text-align: center
+	margin-top: 28px
+	padding: 20px 23px
+
+.btn_show_flat
+	text-decoration: none
+	font-size: 16px
+	line-height: 16px
+
